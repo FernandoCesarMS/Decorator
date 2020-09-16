@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "ConcreteStream.hpp"
 #include "ParenthesesDecorator.hpp"
 #include "CommaDecorator.hpp"

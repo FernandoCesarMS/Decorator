@@ -2,6 +2,7 @@
 #define ABSTRACT_STREAM_H
 
 #include <string>
+#include <iostream>
 
 /**
  * \brief An abstract class that denotes a stream. In our case, a stream is
