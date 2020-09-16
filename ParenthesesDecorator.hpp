@@ -9,7 +9,8 @@
  * For instance, if the stream is "a 23 b 3.14", then it produces
  * "( a, 23, b, 3.14 )".
  */
-class ParenthesesDecorator: public StreamDecorator {
+class ParenthesesDecorator : public StreamDecorator
+{
 
 public:
   /**
@@ -17,12 +18,12 @@ public:
    * i.e., the stream, to the base decorator.
    * \param the object that must be decorated.
    */
-  ParenthesesDecorator(AbstractStream* streamObj): StreamDecorator(streamObj) {}
+  ParenthesesDecorator(AbstractStream *streamObj) : StreamDecorator(streamObj) {}
 
   /**
    * \brief The destructor is the default destructor produced by the compiler.
    */
-  ~ParenthesesDecorator() {};
+  ~ParenthesesDecorator(){};
 
   /**
    * \brief This decorated method surrounds the stream with parentheses.

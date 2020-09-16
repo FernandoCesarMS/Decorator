@@ -10,7 +10,8 @@
  * Example: "a 23 b   3.14" =>  "a , 23 , b , 3.14"
  * Notice that multiple empty spaces are collapsed into one single space.
  */
-class CommaDecorator: public StreamDecorator {
+class CommaDecorator : public StreamDecorator
+{
 
 public:
   /**
@@ -18,12 +19,12 @@ public:
    * i.e., the stream, to the base decorator.
    * \param the object that must be decorated.
    */
-  CommaDecorator(AbstractStream* streamObj): StreamDecorator(streamObj) {}
+  CommaDecorator(AbstractStream *streamObj) : StreamDecorator(streamObj) {}
 
   /**
    * \brief The destructor is the default destructor produced by the compiler.
    */
-  ~CommaDecorator() {};
+  ~CommaDecorator(){};
 
   /**
    * \brief This decorated method adds the comma between the tokens of the

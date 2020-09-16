@@ -8,7 +8,8 @@
  * \brief An abstract class that denotes a stream. In our case, a stream is
  * just a string, i.e., a sequence of characteres.
  */
-class AbstractStream {
+class AbstractStream
+{
 public:
   /**
    * This is the abstract method that returns the string that this class
@@ -29,7 +30,7 @@ public:
    * class, then the destructor of the abstract class will not be able to do it.
    * That will lead to a memory leak.
    */
-  virtual ~AbstractStream() {};
+  virtual ~AbstractStream(){};
 };
 
 #endif

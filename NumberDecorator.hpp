@@ -10,7 +10,8 @@
  * numbers with a dot '.' remain unaltered.
  * Example: "a 23 b 3.14" => "a +23 b 3.14"
  */
-class NumberDecorator: public StreamDecorator {
+class NumberDecorator : public StreamDecorator
+{
 
 public:
   /**
@@ -18,12 +19,12 @@ public:
    * i.e., the stream, to the base decorator.
    * \param the object that must be decorated.
    */
-  NumberDecorator(AbstractStream* streamObj): StreamDecorator(streamObj) {}
+  NumberDecorator(AbstractStream *streamObj) : StreamDecorator(streamObj) {}
 
   /**
    * \brief The destructor is the default destructor produced by the compiler.
    */
-  ~NumberDecorator() {};
+  ~NumberDecorator(){};
 
   /**
    * \brief This decorated method adds the '+' sign in front of the integers.
