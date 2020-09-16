@@ -4,5 +4,5 @@
 
 std::string NumberDecorator::toString() {
   // TODO: implement this method;
-  return "( " + StreamDecorator::toString() + " )";
+  return StreamDecorator::toString();
 }

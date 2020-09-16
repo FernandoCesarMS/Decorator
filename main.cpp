@@ -43,3 +43,6 @@ int main() {
   std::cout << buildCommas(stream)->toString() << std::endl;
   std::cout << buildIntegers(stream)->toString() << std::endl;
 }
+
+//adf 34 12 fad 3.24 -4 df
+//( , adf , +34 , +12 , fad , 3.24 , -4 , df , )
